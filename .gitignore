@@ -1,0 +1,8 @@
+# Ignore Pods directory
+Pods/
+
+# Ignore Podfile.lock
+Podfile.lock
+
+# Ignore any local videos used for testing
+ProximityVideoPlayer/Videos
