@@ -6,3 +6,5 @@ Cast your videos using third party casting SDKs
 2 a. If you want to use a video from remote you can change the `videoURL` in the `ProximityVideoPlayer/ProximityVideoPlayer/CastPlayerView/CastPlayerViewModal.swift` file
 2 b. If want to read a media file locally from the Project, add your .mp4 file to `ProximityVideoPlayer/Videos` folder and use the same name in the `Constants.VideoFile.Name`
  
+Architecture diagram of Casting flow in this application
+<img src="ProximityVideoPlayer/GoogleCastArchitecture.png" alt="Google Cast Architecture" width="300" height="400" />
