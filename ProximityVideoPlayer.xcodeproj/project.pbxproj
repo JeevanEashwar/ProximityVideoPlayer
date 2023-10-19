@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A9445EA12CD82B9E0498384 /* Pods_ProximityVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06725E8BF2330776C9EF6F0D /* Pods_ProximityVideoPlayer.framework */; };
+		58C4EC82094C509D3DB409E1 /* Pods_ProximityVideoPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A562554BE622FEC490C982 /* Pods_ProximityVideoPlayerTests.framework */; };
+		81A4FA9DE65DD5BAD14DE304 /* Pods_ProximityVideoPlayer_ProximityVideoPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB927354213C90BD4164DBFD /* Pods_ProximityVideoPlayer_ProximityVideoPlayerUITests.framework */; };
+		84DAC60D2AE110D900AB3F1E /* ProximityVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC60C2AE110D900AB3F1E /* ProximityVideoPlayerApp.swift */; };
+		84DAC60F2AE110D900AB3F1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC60E2AE110D900AB3F1E /* ContentView.swift */; };
+		84DAC6112AE110DA00AB3F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DAC6102AE110DA00AB3F1E /* Assets.xcassets */; };
+		84DAC6142AE110DA00AB3F1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DAC6132AE110DA00AB3F1E /* Preview Assets.xcassets */; };
+		84DAC61E2AE110DA00AB3F1E /* ProximityVideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC61D2AE110DA00AB3F1E /* ProximityVideoPlayerTests.swift */; };
+		84DAC6282AE110DA00AB3F1E /* ProximityVideoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC6272AE110DA00AB3F1E /* ProximityVideoPlayerUITests.swift */; };
+		84DAC62A2AE110DA00AB3F1E /* ProximityVideoPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC6292AE110DA00AB3F1E /* ProximityVideoPlayerUITestsLaunchTests.swift */; };
+		84DAC6392AE1150100AB3F1E /* CastPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC6382AE1150100AB3F1E /* CastPlayerView.swift */; };
+		84DAC63C2AE115AC00AB3F1E /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC63B2AE115AC00AB3F1E /* VideoPlayerView.swift */; };
+		84DAC6402AE1193A00AB3F1E /* 30_seconds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84DAC63F2AE1193A00AB3F1E /* 30_seconds.mp4 */; };
+		84DAC6432AE11D8F00AB3F1E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAC6422AE11D8F00AB3F1E /* Constants.swift */; };
+		84ED88CD2AE122F900AF9DAC /* CastPlayerViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED88CC2AE122F900AF9DAC /* CastPlayerViewModal.swift */; };
+		84ED88D02AE129A800AF9DAC /* CastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED88CF2AE129A800AF9DAC /* CastManager.swift */; };
+		84ED88D22AE1380700AF9DAC /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED88D12AE1380700AF9DAC /* PlayerViewController.swift */; };
+		84ED88D42AE1430800AF9DAC /* GoogleCastArchitecture.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ED88D32AE1430800AF9DAC /* GoogleCastArchitecture.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84DAC61A2AE110DA00AB3F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DAC6012AE110D900AB3F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DAC6082AE110D900AB3F1E;
+			remoteInfo = ProximityVideoPlayer;
+		};
+		84DAC6242AE110DA00AB3F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DAC6012AE110D900AB3F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DAC6082AE110D900AB3F1E;
+			remoteInfo = ProximityVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06725E8BF2330776C9EF6F0D /* Pods_ProximityVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		070CB7764C5141707B128BF3 /* Pods-ProximityVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityVideoPlayer.release.xcconfig"; path = "Target Support Files/Pods-ProximityVideoPlayer/Pods-ProximityVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		10A562554BE622FEC490C982 /* Pods_ProximityVideoPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityVideoPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0186804C30621F0B11B692 /* Pods-ProximityVideoPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityVideoPlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-ProximityVideoPlayerTests/Pods-ProximityVideoPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E86EA07EA5B6A871E940601 /* Pods-ProximityVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityVideoPlayer.debug.xcconfig"; path = "Target Support Files/Pods-ProximityVideoPlayer/Pods-ProximityVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		7E45D1A00C5D50859DD6A22F /* Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.release.xcconfig"; path = "Target Support Files/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84DAC6092AE110D900AB3F1E /* ProximityVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DAC60C2AE110D900AB3F1E /* ProximityVideoPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityVideoPlayerApp.swift; sourceTree = "<group>"; };
+		84DAC60E2AE110D900AB3F1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84DAC6102AE110DA00AB3F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DAC6132AE110DA00AB3F1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84DAC6192AE110DA00AB3F1E /* ProximityVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximityVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DAC61D2AE110DA00AB3F1E /* ProximityVideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityVideoPlayerTests.swift; sourceTree = "<group>"; };
+		84DAC6232AE110DA00AB3F1E /* ProximityVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximityVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DAC6272AE110DA00AB3F1E /* ProximityVideoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityVideoPlayerUITests.swift; sourceTree = "<group>"; };
+		84DAC6292AE110DA00AB3F1E /* ProximityVideoPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityVideoPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84DAC6362AE1118400AB3F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84DAC6382AE1150100AB3F1E /* CastPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastPlayerView.swift; sourceTree = "<group>"; };
+		84DAC63B2AE115AC00AB3F1E /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		84DAC63F2AE1193A00AB3F1E /* 30_seconds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 30_seconds.mp4; sourceTree = "<group>"; };
+		84DAC6422AE11D8F00AB3F1E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84ED88CC2AE122F900AF9DAC /* CastPlayerViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastPlayerViewModal.swift; sourceTree = "<group>"; };
+		84ED88CF2AE129A800AF9DAC /* CastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastManager.swift; sourceTree = "<group>"; };
+		84ED88D12AE1380700AF9DAC /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		84ED88D32AE1430800AF9DAC /* GoogleCastArchitecture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoogleCastArchitecture.png; sourceTree = "<group>"; };
+		AFC0650308BBA757848A1D5B /* Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB927354213C90BD4164DBFD /* Pods_ProximityVideoPlayer_ProximityVideoPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityVideoPlayer_ProximityVideoPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59D193C8AED4516D460B3BA /* Pods-ProximityVideoPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityVideoPlayerTests.release.xcconfig"; path = "Target Support Files/Pods-ProximityVideoPlayerTests/Pods-ProximityVideoPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84DAC6062AE110D900AB3F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9445EA12CD82B9E0498384 /* Pods_ProximityVideoPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DAC6162AE110DA00AB3F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C4EC82094C509D3DB409E1 /* Pods_ProximityVideoPlayerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DAC6202AE110DA00AB3F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A4FA9DE65DD5BAD14DE304 /* Pods_ProximityVideoPlayer_ProximityVideoPlayerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0408065C1B2A504693F65699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E86EA07EA5B6A871E940601 /* Pods-ProximityVideoPlayer.debug.xcconfig */,
+				070CB7764C5141707B128BF3 /* Pods-ProximityVideoPlayer.release.xcconfig */,
+				AFC0650308BBA757848A1D5B /* Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.debug.xcconfig */,
+				7E45D1A00C5D50859DD6A22F /* Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.release.xcconfig */,
+				4C0186804C30621F0B11B692 /* Pods-ProximityVideoPlayerTests.debug.xcconfig */,
+				F59D193C8AED4516D460B3BA /* Pods-ProximityVideoPlayerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84DAC6002AE110D900AB3F1E = {
+			isa = PBXGroup;
+			children = (
+				84DAC60B2AE110D900AB3F1E /* ProximityVideoPlayer */,
+				84DAC61C2AE110DA00AB3F1E /* ProximityVideoPlayerTests */,
+				84DAC6262AE110DA00AB3F1E /* ProximityVideoPlayerUITests */,
+				84DAC60A2AE110D900AB3F1E /* Products */,
+				0408065C1B2A504693F65699 /* Pods */,
+				A29DCAF23878702ED2306DD2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84DAC60A2AE110D900AB3F1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC6092AE110D900AB3F1E /* ProximityVideoPlayer.app */,
+				84DAC6192AE110DA00AB3F1E /* ProximityVideoPlayerTests.xctest */,
+				84DAC6232AE110DA00AB3F1E /* ProximityVideoPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84DAC60B2AE110D900AB3F1E /* ProximityVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				84ED88D32AE1430800AF9DAC /* GoogleCastArchitecture.png */,
+				84ED88CE2AE1298800AF9DAC /* AppManagers */,
+				84DAC6412AE11D7400AB3F1E /* Constants */,
+				84DAC63D2AE1190B00AB3F1E /* Videos */,
+				84DAC63A2AE1159600AB3F1E /* VideoPlayerView */,
+				84DAC6372AE114C600AB3F1E /* CastPlayerView */,
+				84DAC6362AE1118400AB3F1E /* Info.plist */,
+				84DAC60C2AE110D900AB3F1E /* ProximityVideoPlayerApp.swift */,
+				84DAC60E2AE110D900AB3F1E /* ContentView.swift */,
+				84DAC6102AE110DA00AB3F1E /* Assets.xcassets */,
+				84DAC6122AE110DA00AB3F1E /* Preview Content */,
+			);
+			path = ProximityVideoPlayer;
+			sourceTree = "<group>";
+		};
+		84DAC6122AE110DA00AB3F1E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC6132AE110DA00AB3F1E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84DAC61C2AE110DA00AB3F1E /* ProximityVideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC61D2AE110DA00AB3F1E /* ProximityVideoPlayerTests.swift */,
+			);
+			path = ProximityVideoPlayerTests;
+			sourceTree = "<group>";
+		};
+		84DAC6262AE110DA00AB3F1E /* ProximityVideoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC6272AE110DA00AB3F1E /* ProximityVideoPlayerUITests.swift */,
+				84DAC6292AE110DA00AB3F1E /* ProximityVideoPlayerUITestsLaunchTests.swift */,
+			);
+			path = ProximityVideoPlayerUITests;
+			sourceTree = "<group>";
+		};
+		84DAC6372AE114C600AB3F1E /* CastPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC6382AE1150100AB3F1E /* CastPlayerView.swift */,
+				84ED88CC2AE122F900AF9DAC /* CastPlayerViewModal.swift */,
+			);
+			path = CastPlayerView;
+			sourceTree = "<group>";
+		};
+		84DAC63A2AE1159600AB3F1E /* VideoPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC63B2AE115AC00AB3F1E /* VideoPlayerView.swift */,
+				84ED88D12AE1380700AF9DAC /* PlayerViewController.swift */,
+			);
+			path = VideoPlayerView;
+			sourceTree = "<group>";
+		};
+		84DAC63D2AE1190B00AB3F1E /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC63F2AE1193A00AB3F1E /* 30_seconds.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		84DAC6412AE11D7400AB3F1E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84DAC6422AE11D8F00AB3F1E /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84ED88CE2AE1298800AF9DAC /* AppManagers */ = {
+			isa = PBXGroup;
+			children = (
+				84ED88CF2AE129A800AF9DAC /* CastManager.swift */,
+			);
+			path = AppManagers;
+			sourceTree = "<group>";
+		};
+		A29DCAF23878702ED2306DD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06725E8BF2330776C9EF6F0D /* Pods_ProximityVideoPlayer.framework */,
+				EB927354213C90BD4164DBFD /* Pods_ProximityVideoPlayer_ProximityVideoPlayerUITests.framework */,
+				10A562554BE622FEC490C982 /* Pods_ProximityVideoPlayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84DAC6082AE110D900AB3F1E /* ProximityVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DAC62D2AE110DA00AB3F1E /* Build configuration list for PBXNativeTarget "ProximityVideoPlayer" */;
+			buildPhases = (
+				EAFF3BAB27A36CA24E148039 /* [CP] Check Pods Manifest.lock */,
+				84DAC6052AE110D900AB3F1E /* Sources */,
+				84DAC6062AE110D900AB3F1E /* Frameworks */,
+				84DAC6072AE110D900AB3F1E /* Resources */,
+				763FECA7F6D0832C2AFAC439 /* [CP] Embed Pods Frameworks */,
+				2CE14413AB6360E396A89B1F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProximityVideoPlayer;
+			productName = ProximityVideoPlayer;
+			productReference = 84DAC6092AE110D900AB3F1E /* ProximityVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84DAC6182AE110DA00AB3F1E /* ProximityVideoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DAC6302AE110DA00AB3F1E /* Build configuration list for PBXNativeTarget "ProximityVideoPlayerTests" */;
+			buildPhases = (
+				797DB75DDD63973602D5E5F6 /* [CP] Check Pods Manifest.lock */,
+				84DAC6152AE110DA00AB3F1E /* Sources */,
+				84DAC6162AE110DA00AB3F1E /* Frameworks */,
+				84DAC6172AE110DA00AB3F1E /* Resources */,
+				5049F85BFE92639047D9DE20 /* [CP] Embed Pods Frameworks */,
+				808B48ED9935CB9D0AA1A29D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84DAC61B2AE110DA00AB3F1E /* PBXTargetDependency */,
+			);
+			name = ProximityVideoPlayerTests;
+			productName = ProximityVideoPlayerTests;
+			productReference = 84DAC6192AE110DA00AB3F1E /* ProximityVideoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84DAC6222AE110DA00AB3F1E /* ProximityVideoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DAC6332AE110DA00AB3F1E /* Build configuration list for PBXNativeTarget "ProximityVideoPlayerUITests" */;
+			buildPhases = (
+				08C83D82B88EE3B585C01BBD /* [CP] Check Pods Manifest.lock */,
+				84DAC61F2AE110DA00AB3F1E /* Sources */,
+				84DAC6202AE110DA00AB3F1E /* Frameworks */,
+				84DAC6212AE110DA00AB3F1E /* Resources */,
+				F083B8979D523B565B3CA7FC /* [CP] Embed Pods Frameworks */,
+				BAA8D0964A7F03BDC00C4353 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84DAC6252AE110DA00AB3F1E /* PBXTargetDependency */,
+			);
+			name = ProximityVideoPlayerUITests;
+			productName = ProximityVideoPlayerUITests;
+			productReference = 84DAC6232AE110DA00AB3F1E /* ProximityVideoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84DAC6012AE110D900AB3F1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					84DAC6082AE110D900AB3F1E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					84DAC6182AE110DA00AB3F1E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 84DAC6082AE110D900AB3F1E;
+					};
+					84DAC6222AE110DA00AB3F1E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 84DAC6082AE110D900AB3F1E;
+					};
+				};
+			};
+			buildConfigurationList = 84DAC6042AE110D900AB3F1E /* Build configuration list for PBXProject "ProximityVideoPlayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84DAC6002AE110D900AB3F1E;
+			productRefGroup = 84DAC60A2AE110D900AB3F1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84DAC6082AE110D900AB3F1E /* ProximityVideoPlayer */,
+				84DAC6182AE110DA00AB3F1E /* ProximityVideoPlayerTests */,
+				84DAC6222AE110DA00AB3F1E /* ProximityVideoPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84DAC6072AE110D900AB3F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ED88D42AE1430800AF9DAC /* GoogleCastArchitecture.png in Resources */,
+				84DAC6142AE110DA00AB3F1E /* Preview Assets.xcassets in Resources */,
+				84DAC6112AE110DA00AB3F1E /* Assets.xcassets in Resources */,
+				84DAC6402AE1193A00AB3F1E /* 30_seconds.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DAC6172AE110DA00AB3F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DAC6212AE110DA00AB3F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08C83D82B88EE3B585C01BBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CE14413AB6360E396A89B1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer/Pods-ProximityVideoPlayer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer/Pods-ProximityVideoPlayer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer/Pods-ProximityVideoPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5049F85BFE92639047D9DE20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayerTests/Pods-ProximityVideoPlayerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayerTests/Pods-ProximityVideoPlayerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayerTests/Pods-ProximityVideoPlayerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		763FECA7F6D0832C2AFAC439 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer/Pods-ProximityVideoPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer/Pods-ProximityVideoPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer/Pods-ProximityVideoPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		797DB75DDD63973602D5E5F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProximityVideoPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808B48ED9935CB9D0AA1A29D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayerTests/Pods-ProximityVideoPlayerTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayerTests/Pods-ProximityVideoPlayerTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayerTests/Pods-ProximityVideoPlayerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA8D0964A7F03BDC00C4353 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAFF3BAB27A36CA24E148039 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProximityVideoPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F083B8979D523B565B3CA7FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests/Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84DAC6052AE110D900AB3F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ED88D02AE129A800AF9DAC /* CastManager.swift in Sources */,
+				84ED88D22AE1380700AF9DAC /* PlayerViewController.swift in Sources */,
+				84ED88CD2AE122F900AF9DAC /* CastPlayerViewModal.swift in Sources */,
+				84DAC6432AE11D8F00AB3F1E /* Constants.swift in Sources */,
+				84DAC60F2AE110D900AB3F1E /* ContentView.swift in Sources */,
+				84DAC60D2AE110D900AB3F1E /* ProximityVideoPlayerApp.swift in Sources */,
+				84DAC6392AE1150100AB3F1E /* CastPlayerView.swift in Sources */,
+				84DAC63C2AE115AC00AB3F1E /* VideoPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DAC6152AE110DA00AB3F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DAC61E2AE110DA00AB3F1E /* ProximityVideoPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DAC61F2AE110DA00AB3F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DAC6282AE110DA00AB3F1E /* ProximityVideoPlayerUITests.swift in Sources */,
+				84DAC62A2AE110DA00AB3F1E /* ProximityVideoPlayerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84DAC61B2AE110DA00AB3F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DAC6082AE110D900AB3F1E /* ProximityVideoPlayer */;
+			targetProxy = 84DAC61A2AE110DA00AB3F1E /* PBXContainerItemProxy */;
+		};
+		84DAC6252AE110DA00AB3F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DAC6082AE110D900AB3F1E /* ProximityVideoPlayer */;
+			targetProxy = 84DAC6242AE110DA00AB3F1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84DAC62B2AE110DA00AB3F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84DAC62C2AE110DA00AB3F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84DAC62E2AE110DA00AB3F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E86EA07EA5B6A871E940601 /* Pods-ProximityVideoPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProximityVideoPlayer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProximityVideoPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ProximityVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84DAC62F2AE110DA00AB3F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 070CB7764C5141707B128BF3 /* Pods-ProximityVideoPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProximityVideoPlayer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProximityVideoPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ProximityVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84DAC6312AE110DA00AB3F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0186804C30621F0B11B692 /* Pods-ProximityVideoPlayerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ProximityVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProximityVideoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProximityVideoPlayer";
+			};
+			name = Debug;
+		};
+		84DAC6322AE110DA00AB3F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59D193C8AED4516D460B3BA /* Pods-ProximityVideoPlayerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ProximityVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProximityVideoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProximityVideoPlayer";
+			};
+			name = Release;
+		};
+		84DAC6342AE110DA00AB3F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC0650308BBA757848A1D5B /* Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ProximityVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProximityVideoPlayer;
+			};
+			name = Debug;
+		};
+		84DAC6352AE110DA00AB3F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E45D1A00C5D50859DD6A22F /* Pods-ProximityVideoPlayer-ProximityVideoPlayerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.ProximityVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProximityVideoPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84DAC6042AE110D900AB3F1E /* Build configuration list for PBXProject "ProximityVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DAC62B2AE110DA00AB3F1E /* Debug */,
+				84DAC62C2AE110DA00AB3F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DAC62D2AE110DA00AB3F1E /* Build configuration list for PBXNativeTarget "ProximityVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DAC62E2AE110DA00AB3F1E /* Debug */,
+				84DAC62F2AE110DA00AB3F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DAC6302AE110DA00AB3F1E /* Build configuration list for PBXNativeTarget "ProximityVideoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DAC6312AE110DA00AB3F1E /* Debug */,
+				84DAC6322AE110DA00AB3F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DAC6332AE110DA00AB3F1E /* Build configuration list for PBXNativeTarget "ProximityVideoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DAC6342AE110DA00AB3F1E /* Debug */,
+				84DAC6352AE110DA00AB3F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84DAC6012AE110D900AB3F1E /* Project object */;
+}
