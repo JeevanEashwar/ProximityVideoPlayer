@@ -15,15 +15,25 @@ struct CastPlayerView: View {
         VStack {
             // Page title
             Text(Constants.DisplayName)
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                        .multilineTextAlignment(.center)
-                        .padding()
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(.black)
+                .multilineTextAlignment(.center)
+                .padding()
             // This View contains the AVPlayer to play the media
             VideoPlayerView(viewModal: viewModal)
                 .frame(height: 300)
                 .edgesIgnoringSafeArea(.top)
+            Button(action: {
+                self.viewModal.toggleCasting()
+            }) {
+                Text(viewModal.castButtonState.rawValue)
+                    .font(.headline)
+                    .frame(width: 200, height: 60)
+                    .background(.black)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
     }
 }

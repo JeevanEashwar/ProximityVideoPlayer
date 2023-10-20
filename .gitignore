@@ -4,5 +4,8 @@ Pods/
 # Ignore Podfile.lock
 Podfile.lock
 
+# Ignore userdata
+ProximityVideoPlayer.xcworkspace/xcuserdata/
+
 # Ignore any local videos used for testing
 ProximityVideoPlayer/Videos
